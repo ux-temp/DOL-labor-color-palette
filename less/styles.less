@@ -1,0 +1,200 @@
+/*greyscale colors*/
+@black: #000000;
+@white: #FFFFFF;
+@grey: #878892;
+
+@darkerGrey: darken(@grey, 30%);
+@darkGrey: darken(@grey, 20%);
+@lightGrey: lighten(@grey, 20%);
+@lighterGrey: lighten(@grey, 30%);
+
+/*primary colors*/
+@nysBlue: #003366;
+@dolRed: #771C2D;
+@dolBlue: #6491B0;
+@dolBlueLight: #98B5C7;
+
+/*accent colors*/
+@accentBlue: #E5ECF9;
+@accentDarkBlue: darken(@accentBlue, 4%);
+@accentDarkerBlue: darken(@accentBlue, 46%);
+
+@accentYellow: #f9f8e3;
+@accentDarkYellow: darken(@accentYellow, 8%);
+@accentDarkerYellow: darken(@accentYellow, 56%);
+
+@accentRed: #F9E5E6;
+@accentDarkRed: darken(@accentRed, 4%);
+@accentDarkerRed: darken(@accentRed, 46%);
+
+@accentGreen: #E9F9E5;
+@accentDarkGreen: darken(@accentGreen, 8%);
+@accentDarkerGreen: darken(@accentGreen, 56%);
+
+@accentOrange: #FCF3DE;
+@accentDarkOrange: darken(@accentOrange, 8%);
+@accentDarkerOrange: darken(@accentOrange, 56%);
+
+/*images*/
+@information: url(../images/information.png) no-repeat 8px 7px;
+@warning: url(../images/warning.png) no-repeat 8px 7px;
+@error: url(../images/exclamation.png) no-repeat 8px 7px;
+@success: url(../images/tick.png) no-repeat 8px 7px;
+@system: url(../images/wrench.png) no-repeat 8px 7px;
+
+/*---------------GREYSCALE COLORS---------------*/
+.black {
+	background: @black;
+}
+
+.white {
+	background: @white;
+}
+
+.darkerGrey {
+	background: @darkerGrey;
+}
+
+.darkGrey {
+	background: @darkGrey;
+}
+
+.grey {
+	background: @grey;
+}
+
+.lightGrey {
+	background: @lightGrey;
+}
+
+.lighterGrey {
+	background: @lighterGrey;
+}
+
+/*---------------PRIMARY COLORS---------------*/
+.nysBlue {
+	background: @nysBlue;
+}
+
+.dolRed {
+	background: @dolRed;
+}
+
+.dolBlue {
+	background: @dolBlue;
+}
+
+.dolBlueLight {
+	background: @dolBlueLight;
+}
+
+/*---------------ACCENT COLORS---------------*/
+.accentBlue {
+	background: @accentBlue;
+}
+
+.accentDarkBlue {
+	background: @accentDarkBlue;
+}
+
+.accentDarkerBlue {
+	background: @accentDarkerBlue;
+}
+
+.accentYellow {
+	background: @accentYellow
+}
+
+.accentDarkYellow {
+	background: @accentDarkYellow;
+}
+
+.accentDarkerYellow {
+	background: @accentDarkerYellow;
+}
+
+.accentRed {
+	background: @accentRed;
+}
+
+.accentDarkRed {
+	background: @accentDarkRed;
+}
+
+.accentDarkerRed {
+	background: @accentDarkerRed;
+}
+
+.accentGreen {
+	background: @accentGreen;
+}
+
+.accentDarkGreen {
+	background: @accentDarkGreen;
+}
+
+.accentDarkerGreen {
+	background: @accentDarkerGreen;
+}
+
+.accentOrange {
+	background: @accentOrange;
+}
+
+.accentDarkOrange {
+	background: @accentDarkOrange;
+}
+
+.accentDarkerOrange {
+	background: @accentDarkerOrange;
+}
+/*---------------UX-MESSAGES---------------*/
+.ux-msg {
+	background: @accentBlue @information;
+	border: @accentDarkBlue 1px solid;
+	color: @accentDarkerBlue;
+}
+
+.ux-msg.warning {
+	background: @accentYellow @warning;
+	border: @accentDarkYellow 1px solid;
+	color: @accentDarkerYellow;
+}
+
+.ux-msg.error {
+	background: @accentRed @error;
+	border: @accentDarkRed 1px solid;
+	color: @accentDarkerRed;
+}
+
+.ux-msg.success {
+	background: @accentGreen @success;
+	border: @accentDarkGreen 1px solid;
+	color: @accentDarkerGreen;
+}
+
+.ux-msg.system {
+	background: @accentOrange @system;
+	border: @accentDarkOrange 1px solid;
+	color: @accentDarkerOrange;
+}
+
+/*---------------UX-MESSAGES---------------*/
+
+.button.primary {
+	background: @dolBlueLight !important;
+	border-color: @nysBlue !important;
+}
+
+.button.primary:hover {
+	background: @dolBlue !important;
+}
+
+.button {
+	background: @lighterGrey !important;
+	border-color: @grey !important;
+}
+
+.button:hover {
+	background: @lightGrey !important;
+}
